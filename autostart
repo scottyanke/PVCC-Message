@@ -1,0 +1,8 @@
+# This file is located at /etc/xdg/lxsession/LXDE-pi/autostart, and is what starts the kiosk shell script
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+#@xscreensaver -no-splash
+#@point-rpi
+@unclutter -display :0 -idle 0.5 -root
+@bash /home/pi/kiosk.sh
+
